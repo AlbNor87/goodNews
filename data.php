@@ -2,3 +2,25 @@
 declare(strict_types=1);
 // This is the file where you can keep all your data such as articles and
 // authors.
+$posts = [
+
+  [
+    'title' => 'THE FIRST POST',
+    'author' => 'Morpheus',
+    'avatar' => '<img src="../img/morpheus.jpg">',
+    'content' => "This is your last chance. After this, there is no turning back. You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.",
+    'date' => '2017',
+    'likes' => 15,
+  ],
+
+  [
+    'title' => "We are the cure.",
+    'author' => 'Agent Smith',
+    'avatar' => '<img src="../img/smith.jpg">',
+    'content' => "I'd like to share a revelation that I've had during my time here. It came to me when I tried to classify your species and I realized that you're not actually mammals. Every mammal on this planet instinctively develops a natural equilibrium with the surrounding environment but you humans do not. You move to an area and you multiply and multiply until every natural resource is consumed and the only way you can survive is to spread to another area. There is another organism on this planet that follows the same pattern. Do you know what it is? A virus. Human beings are a disease, a cancer of this planet. You're a plague and we are the cure.",
+    'date' => '2017',
+    'likes' => 10,
+  ]
+
+
+];
