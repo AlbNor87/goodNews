@@ -11,7 +11,7 @@ require __DIR__.'/header.php';
     <body>
 
       <div class="header">
-        <p>THE</p> <h1>MATRIX</h1>
+        <p>THE</p> <h1>MATRIX DAILY</h1>
       </div>
 
       <div class="main-container">
@@ -47,7 +47,7 @@ require __DIR__.'/header.php';
                 <div class="content">
                   <?php echo $post['content']; ?>
                 </div>
-              </div> <!-- /post-grid -->
+              </div> <!-- /post-body -->
 
               <div class="post-footer">
 
