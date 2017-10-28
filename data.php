@@ -14,10 +14,28 @@ $posts = [
   ],
 
   [
+    'title' => 'It is all around us',
+    'author' => 'Morpheus',
+    'avatar' => '<img src="../img/morpheus.jpg">',
+    'content' => "The Matrix is everywhere. It is all around us. Even now, in this very room. You can see it when you look out your window or when you turn on your television. You can feel it when you go to work... when you go to church... when you pay your taxes. It is the world that has been pulled over your eyes to blind you from the truth.",
+    'date' => '2017',
+    'likes' => 15,
+  ],
+
+  [
     'title' => 'WE ARE THE CURE',
     'author' => 'Agent Smith',
     'avatar' => '<img src="../img/smith.jpg">',
     'content' => "I'd like to share a revelation that I've had during my time here. It came to me when I tried to classify your species and I realized that you're not actually mammals. Every mammal on this planet instinctively develops a natural equilibrium with the surrounding environment but you humans do not. You move to an area and you multiply and multiply until every natural resource is consumed and the only way you can survive is to spread to another area. There is another organism on this planet that follows the same pattern. Do you know what it is? A virus. Human beings are a disease, a cancer of this planet. You're a plague and we are the cure.",
+    'date' => '2017',
+    'likes' => 10,
+  ],
+  
+  [
+    'title' => 'a perfect world',
+    'author' => 'Agent Smith',
+    'avatar' => '<img src="../img/smith.jpg">',
+    'content' => "Did you know that the first Matrix was designed to be a perfect human world? Where none suffered, where everyone would be happy. It was a disaster. No one would accept the program. Entire crops were lost. Some believed we lacked the programming language to describe your perfect world. But I believe that, as a species, human beings define their reality through suffering and misery. The perfect world was a dream that your primitive cerebrum kept trying to wake up from. Which is why the Matrix was redesigned to this: the peak of your civilization.",
     'date' => '2017',
     'likes' => 10,
   ],
@@ -40,5 +58,13 @@ $posts = [
     'likes' => 20,
   ],
 
+  [
+    'title' => "I'm not afraid anymore",
+    'author' => 'Trinity',
+    'avatar' => '<img src="../img/trinity.png">',
+    'content' => "Neo, I'm not afraid anymore. The Oracle told me that I would fall in love with a man. And that man, the man that I loved would be the One. So you see, you can't be dead. You can't be, because I love you. You hear me? I love you.",
+    'date' => '2017',
+    'likes' => 20,
+  ],
 
 ];
