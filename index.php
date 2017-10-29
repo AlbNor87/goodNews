@@ -6,6 +6,9 @@ declare(strict_types=1);
 require __DIR__.'/data.php';
 require __DIR__.'/functions.php';
 require __DIR__.'/header.php';
+
+$posts = val_sort($posts, 'date');
+
 ?>
 
     <body>
