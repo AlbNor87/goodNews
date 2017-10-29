@@ -29,95 +29,100 @@ require __DIR__.'/header.php';
 
 $posts = val_sort($posts, 'date');
 
-
 ?>
+<body>
 
-    <body>
+  <div class="header">
+    <p>THE</p> <h1>MATRIX NEWS</h1>
+  </div>
 
-      <div class="header">
-        <p>THE</p> <h1>MATRIX NEWS</h1>
-      </div>
+  <div class="main-container">
 
-      <div class="main-container">
+    <div class="news-feed">
 
-        <div class="news-feed">
+        <form class="form" action="index.php">
 
-          <?php foreach ($posts as $post): ?>
+          <label for="sortBy">Sort posts by</label>
+          <select name="sortBy">
+            <option value="date">Date</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+          </select>
 
-            <div class="post">
+          <input type="submit" value="Submit">
 
-              <div class="post-header">
+        </form>
 
-                <div class="title">
-                  <?php echo strtoupper($post['title']); ?>
-                </div>
+      <?php foreach ($posts as $post): ?>
 
-                <div class="date">
-                  <?php echo date('Y-m-d', $post['date']); ?>
-                </div>
+        <div class="post">
+
+          <div class="post-header">
+
+            <div class="title">
+              <?php echo strtoupper($post['title']); ?>
+            </div>
+
+            <div class="date">
+              <?php echo date('Y-m-d', $post['date']); ?>
+            </div>
+          </div>
+
+          <div class="post-body">
+
+            <div class="author">
+              <div class="avatar">
+                <?php echo $post['avatar']; ?>
               </div>
+              <?php echo $post['author']; ?>
+            </div><!-- /author -->
 
-              <div class="post-body">
+            <br>
 
-                <div class="author">
-                  <div class="avatar">
-                    <?php echo $post['avatar']; ?>
-                  </div>
-                  <?php echo $post['author']; ?>
-                </div><!-- /author -->
+            <div class="content">
+              <?php echo $post['content']; ?>
+            </div>
+          </div> <!-- /post-body -->
 
-                <br>
+          <div class="post-footer">
 
-                <div class="content">
-                  <?php echo $post['content']; ?>
-                </div>
-              </div> <!-- /post-body -->
+            <div class="likes">
+              <?php echo "Likes: " . $post['likes'];?>
+            </div>
 
-              <div class="post-footer">
+          </div>
 
-                <div class="likes">
-                  <?php echo "Likes: " . $post['likes'];?>
-                </div>
+        </div> <!-- /post -->
+      <?php endforeach; ?>
 
-              </div>
+        <form class="form" action="index.php" method="get">
 
-            </div> <!-- /post -->
-          <?php endforeach; ?>
+          <h1>MAKE YOUR OWN COMMENT</h1>
 
-          <div class="form">
+          <label for="title">Subject</label>
+          <input type="text" name="title" required>
 
-            <form class="" action="index.php" method="get">
+          <label for="name">Name</label>
+          <input type="text" name="name" required>
 
-              <label for="title">Subject</label>
-              <input type="text" name="title" required>
+          <br>
+          <br>
 
-              <br>
-              <br>
+          <label for="content">Message</label>
+          <br>
+          <textarea name="content" rows="8" cols="80"></textarea>
 
-              <label for="name">Name</label>
-              <input type="text" name="name" required>
+          <br>
+          <br>
 
-              <br>
-              <br>
+          <button type="submit" name="button">Submit</button>
 
-              <label for="content">Message</label>
-              <textarea name="content" rows="8" cols="10"></textarea>
+        </form>
 
-              <br>
-              <br>
+    </div><!-- /news-feed -->
 
-              <button type="submit" name="button">Submit</button>
+  </div><!-- /main-container -->
 
-            </form>
+</body>
 
-        </div><!-- /news-feed -->
-
-
-
-        </div>
-
-
-      </div><!-- /main-container -->
-
-    </body>
 </html>

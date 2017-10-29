@@ -62,14 +62,13 @@ border-radius: 4px;
 .news-feed {
 width: 80%;
 margin: auto;
-margin-top: 50px;
+margin-top: 1vh;
 padding: 3%;
 }
 
 .title {
 font-size: 2vw;
 font-family: 'matrix';
-width: 50%;
 margin-bottom: 3%;
 
 }
@@ -127,13 +126,28 @@ border-radius: 4px;
 .date {
 }
 
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+button {
+  font-size: 0.9em;
+
+}
+
 .form {
   background-color: rgb(248, 248, 248);
   margin: auto;
-  margin-top: 50px;
   padding: 3%;
   margin-bottom: 3%;
   border: 2px solid white;
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form h1 {
+  font-family: 'matrix';
 }
