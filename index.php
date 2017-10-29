@@ -83,36 +83,36 @@ $posts = val_sort($posts, 'date');
 
             </div> <!-- /post -->
           <?php endforeach; ?>
+
+          <div class="form">
+
+            <form class="" action="index.php" method="get">
+
+              <label for="title">Subject</label>
+              <input type="text" name="title" required>
+
+              <br>
+              <br>
+
+              <label for="name">Name</label>
+              <input type="text" name="name" required>
+
+              <br>
+              <br>
+
+              <label for="content">Message</label>
+              <textarea name="content" rows="8" cols="10"></textarea>
+
+              <br>
+              <br>
+
+              <button type="submit" name="button">Submit</button>
+
+            </form>
+
         </div><!-- /news-feed -->
 
-        <div class="form">
 
-          <form class="" action="index.php" method="get">
-
-
-            <label for="title">Subject</label>
-            <input type="text" name="title" required>
-
-            <br>
-            <br>
-
-            <label for="name">Name</label>
-            <input type="text" name="name" required>
-
-            <br>
-            <br>
-
-            <label for="content">Message</label>
-            <textarea name="content" rows="8" cols="10"></textarea>
-
-            <br>
-            <br>
-
-            <button type="submit" name="button">Submit</button>
-
-
-
-          </form>
 
         </div>
 
