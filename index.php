@@ -7,14 +7,35 @@ require __DIR__.'/data.php';
 require __DIR__.'/functions.php';
 require __DIR__.'/header.php';
 
+// if (isset($_GET['title'])) {
+//
+//   $title = $_GET['title'];
+//   $name = $_GET['name'];
+//   $content = $_GET['content'];
+//   $newPost[] = [
+//
+//     'title' => $title,
+//     'author' => $name,
+//     'avatar' => '',
+//     'content' => $content,
+//     'date' => time(),
+//     'likes' => 15,
+//
+//   ];
+//
+// array_push($posts, $newPost);
+//
+// }
+
 $posts = val_sort($posts, 'date');
+
 
 ?>
 
     <body>
 
       <div class="header">
-        <p>THE</p> <h1>MATRIX DAILY</h1>
+        <p>THE</p> <h1>MATRIX NEWS</h1>
       </div>
 
       <div class="main-container">
@@ -28,11 +49,11 @@ $posts = val_sort($posts, 'date');
               <div class="post-header">
 
                 <div class="title">
-                  <?php echo $post['title']; ?>
+                  <?php echo strtoupper($post['title']); ?>
                 </div>
 
                 <div class="date">
-                  <?php echo $post['date']; ?>
+                  <?php echo date('Y-m-d', $post['date']); ?>
                 </div>
               </div>
 
@@ -64,6 +85,36 @@ $posts = val_sort($posts, 'date');
           <?php endforeach; ?>
         </div><!-- /news-feed -->
 
+        <div class="form">
+
+          <form class="" action="index.php" method="get">
+
+
+            <label for="title">Subject</label>
+            <input type="text" name="title" required>
+
+            <br>
+            <br>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+
+            <br>
+            <br>
+
+            <label for="content">Message</label>
+            <textarea name="content" rows="8" cols="10"></textarea>
+
+            <br>
+            <br>
+
+            <button type="submit" name="button">Submit</button>
+
+
+
+          </form>
+
+        </div>
 
 
       </div><!-- /main-container -->

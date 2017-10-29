@@ -46,7 +46,7 @@ flex-direction: column;
 }
 
 .main-container {
-background-color: rgba(245, 245, 245, 0.8);
+background-color: white;
 width: 80%;
 margin: auto;
 margin-top: 0;
@@ -121,4 +121,12 @@ padding: 2%;
 .likes {
 }
 .date {
+}
+
+.form {
+  background-color: rgba(245, 245, 245, 0.8);
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 3%;
 }

@@ -21,23 +21,3 @@ function val_sort(array $array, string $key){
 return $sortedArray;
 
 }
-
-
-// function valToUpper($array, $key){
-//
-//   foreach ($array as $k => $v) {
-//
-//     $tempArray3[] = strtoupper($v[$key]);
-//
-//     }
-//
-// print_r($tempArray3);
-//
-// return $tempArray3;
-//
-// }
-//
-//
-// $uppered = valToUpper($posts, 'title');
-//
-// print_r($uppered);
