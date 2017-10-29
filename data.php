@@ -67,4 +67,22 @@ $posts = [
     'likes' => 20,
   ],
 
+  [
+    'title' => "The messenger",
+    'author' => 'Cypher',
+    'avatar' => '<img src="../img/cypher.png">',
+    'content' => "Don't hate me, Trinity: I'm just a messenger. And right now, I'm gonna prove it to you. If Morpheus was right, then there's no way I can pull this plug. I mean, if Neo's the One, then there'd have to be some kind of miracle to stop me. I mean how can he be the One if he's dead? You never did answer me before, if you bought into Morpheus's bullshit. All I want is a little yes or a no. Look into his eyes, those big pretty eyes. And tell me: Yes or no.",
+    'date' => '2017-10-02',
+    'likes' => 20,
+  ],
+
+  [
+    'title' => "Want a drink?",
+    'author' => 'Cypher',
+    'avatar' => '<img src="../img/cypher.png">',
+    'content' => "...there's way too much information to decode the Matrix. You get used to it, though. Your brain does the translating. I don't even see the code. All I see is blonde, brunette, redhead. Hey uh, you want a drink?",
+    'date' => '2017-03-17',
+    'likes' => 20,
+  ]
+
 ];
