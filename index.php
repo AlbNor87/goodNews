@@ -27,7 +27,15 @@ require __DIR__.'/header.php';
 //
 // }
 
-$posts = val_sort($posts, 'date');
+$sortBy = 'date'; //Default is set sort posts by date
+
+if (isset($_GET['sortBy'])) { //Get what value to sort by
+
+  $sortBy = $_GET['sortBy']; //Set it...
+
+}
+
+$posts = val_sort($posts, $sortBy); //Sort it!!!
 
 ?>
 <body>
@@ -40,7 +48,8 @@ $posts = val_sort($posts, 'date');
 
     <div class="news-feed">
 
-        <form class="form" action="index.php">
+
+        <form class="form align-right" action="index.php">
 
           <label for="sortBy">Sort posts by</label>
           <select name="sortBy">
@@ -49,7 +58,7 @@ $posts = val_sort($posts, 'date');
             <option value="author">Author</option>
           </select>
 
-          <input type="submit" value="Submit">
+          <input type="submit" value="Refresh">
 
         </form>
 
