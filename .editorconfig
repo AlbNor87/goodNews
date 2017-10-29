@@ -1,0 +1,16 @@
+"*":
+  core:
+    disabledPackages: [
+      "emmet"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 12
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "4b37d9ce-bc86-4666-834c-ca197d8e50dc"
+  welcome:
+    showOnStartup: false
