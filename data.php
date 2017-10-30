@@ -11,7 +11,7 @@ $authors = [
     'fullName' => 'Keanu Reeves',
     'id' => 1,
     'link' => 'http://www.imdb.com/name/nm0000206/?ref_=tt_cl_t1',
-    'img' => "<a href=\"http://www.imdb.com/name/nm0000206/?ref_=tt_cl_t1\" target=\"_blank\"\"><img src=\"../img/neo.png\"></a>",
+    'img' => '/img/cypher.png',
   ],
 
   'Morpheus' =>
@@ -20,7 +20,7 @@ $authors = [
     'fullName' => 'Laurence Fishburne',
     'id' => 2,
     'link' => 'http://www.imdb.com/name/nm0000401/?ref_=tt_trv_qu',
-    'img' => "<a href=\"http://www.imdb.com/name/nm0000401/?ref_=tt_trv_qu\" target=\"_blank\"\"><img src=\"../img/morpheus.jpg\"></a>",
+    'img' => '/img/cypher.png',
   ],
 
   'Trinity' =>
@@ -29,7 +29,7 @@ $authors = [
     'fullName' => 'Carrie-Anne Moss',
     'id' => 3,
     'link' => 'http://www.imdb.com/name/nm0005251/?ref_=tt_cl_t3',
-    'img' => "<a href=\"http://www.imdb.com/name/nm0005251/?ref_=tt_cl_t3\" target=\"_blank\"\"><img src=\"../img/trinity.png\"></a>",
+    'img' => '/img/cypher.png',
   ],
 
   'Agent Smith' =>
@@ -38,7 +38,7 @@ $authors = [
     'fullName' => 'Hugo Weaving',
     'id' => 4,
     'link' => 'http://www.imdb.com/name/nm0915989/?ref_=tt_cl_t4',
-    'img' => "<a href=\"http://www.imdb.com/name/nm0915989/?ref_=tt_cl_t4\" target=\"_blank\"\"><img src=\"../img/smith.jpg\"></a>",
+    'img' => '/img/cypher.png',
   ],
 
   'Cypher' =>
@@ -47,7 +47,7 @@ $authors = [
     'fullName' => 'Joe Pantoliano',
     'id' => 5,
     'link' => 'http://www.imdb.com/name/nm0001592/?ref_=tt_cl_t6',
-    'img' => "<a href=\"http://www.imdb.com/name/nm0001592/?ref_=tt_cl_t6\" target=\"_blank\"\"><img src=\"../img/cypher.png\"></a>",
+    'img' => '/img/cypher.png'
   ],
 
 ];
@@ -58,6 +58,7 @@ $posts = [
   [
     'title' => 'Take the pill',
     'author' => $authors['Morpheus']['name'],
+    'link' => $authors['Morpheus']['link'],
     'avatar' => $authors['Morpheus']['img'],
     'content' => "This is your last chance. After this, there is no turning back. You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.",
     'date' => 1495756800,

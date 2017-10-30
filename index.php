@@ -81,7 +81,7 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
 
             <div class="author">
               <div class="avatar">
-                <?php echo $post['avatar']; ?>
+                <a href="<?php echo $post['link'];?>"><img src="<?php echo $post['avatar'];?>"></a>
               </div>
               <?php echo $post['author']; ?>
             </div><!-- /author -->
