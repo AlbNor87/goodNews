@@ -17,7 +17,7 @@ if (isset($_GET['title'])) {
 
     'title' => $title,
     'author' => $name,
-    'avatar' => '',
+    'avatar' => 'img/guest.png',
     'content' => $content,
     'date' => time(),
     'likes' => rand(10,100),
