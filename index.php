@@ -144,6 +144,8 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
 
   </div><!-- /main-container -->
 
+<?php require __DIR__.'/footer.php';?>
+
 <script src="js/master.js">
 
 </script>

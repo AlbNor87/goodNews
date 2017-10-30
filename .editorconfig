@@ -1,16 +1,17 @@
-"*":
-  core:
-    disabledPackages: [
-      "emmet"
-    ]
-    telemetryConsent: "no"
-  editor:
-    fontSize: 12
-    scrollPastEnd: true
-    showIndentGuide: true
-    showInvisibles: true
-    softWrap: true
-  "exception-reporting":
-    userId: "4b37d9ce-bc86-4666-834c-ca197d8e50dc"
-  welcome:
-    showOnStartup: false
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+[*.php]
+indent_size = 4
+
+[*.md]
+indent_size = 4
+trim_trailing_whitespace = false
