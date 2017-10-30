@@ -54,9 +54,11 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
 
   <p>Sort posts by</p>
       <select id="sort">
+        <option value="" disabled selected>Select your option</option>
         <option value="date">Date</option>
         <option value="title">Title</option>
         <option value="author">Author</option>
+        <option value="likes">Likes</option>
       </select>
 
 

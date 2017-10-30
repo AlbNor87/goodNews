@@ -2,7 +2,7 @@
 declare(strict_types=1);
 // This is the file where you can keep all your functions.
 
-//Function for sorting post
+//Function for sorting posts
 require __DIR__.'/data.php';
 
 function val_sort(array $array, string $key){
@@ -12,13 +12,21 @@ function val_sort(array $array, string $key){
     $tempArray[] = $v[$key];
   }
 
-  asort($tempArray);
+  if ($key === 'date' || $key === 'likes'){ //If we choose to sort by date or likes
+    //we want it in the reversed order
+    arsort($tempArray);
+
+  } else {  //Everything else we want to sort in alpabetical or acending order
+
+    asort($tempArray);
+
+  }
 
   foreach ($tempArray as $k => $v) {
 
     $sortedArray[] = $array[$k];
   }
 
-return $sortedArray;
-
+  return $sortedArray;
+  
 }
