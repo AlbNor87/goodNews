@@ -19,8 +19,8 @@ if (isset($_GET['title'])) {
     'author' => $name,
     'avatar' => '',
     'content' => $content,
-    'date' => 10,
-    'likes' => 15,
+    'date' => time(),
+    'likes' => rand(10,100),
 
   ];
 
@@ -50,18 +50,20 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
     <div class="news-feed">
 
 
-        <form class="form align-right" action="index.php">
+<div class="form align-right">
 
-          <label for="sortBy">Sort posts by</label>
-          <select name="sortBy">
-            <option value="date">Date</option>
-            <option value="title">Title</option>
-            <option value="author">Author</option>
-          </select>
+  <p>Sort posts by</p>
+      <select id="sort">
+        <option value="date">Date</option>
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+      </select>
 
-          <input type="submit" value="Refresh">
 
-        </form>
+</div>
+
+
+
 
       <?php foreach ($posts as $post): ?>
 
@@ -132,6 +134,10 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
     </div><!-- /news-feed -->
 
   </div><!-- /main-container -->
+
+<script src="js/master.js">
+
+</script>
 
 </body>
 
