@@ -184,7 +184,8 @@ a {
 }
 
 a:hover {
-    color: rgb(96, 252, 116);
+    color: white;
+    text-shadow: 1px 1px 10px rgba(108, 208, 146, 1);
 }
 
 a:visited {
@@ -214,4 +215,21 @@ footer {
   height: 20vh;
   background-color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer a:visited{
+  margin-top: 1vh;
+  color: white;
+}
+
+footer a:hover {
+    color: rgb(96, 252, 116);
+    text-shadow: 1px 1px 10px rgba(108, 208, 146, 1);
+}
+
+footer p {
+  font-size: 0.8em;
 }

@@ -41,7 +41,7 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
 ?>
 <body>
 
-  <div class="header">
+  <div name="top" class="header">
     <p>THE</p> <h1>MATRIX NEWS</h1>
   </div>
 
@@ -53,7 +53,8 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
         <div class="links">
           <a href="index.php">HOME</a>
           <a href="http://www.imdb.com/title/tt0133093/" target="_blank">IMDB</a>
-          <a href="imdb">HOME</a>
+          <a href="http://www.matrixfans.net/" target="_blank">FANCLUB</a>
+          <a href="https://giphy.com/search/matrix" target="_blank">GIFS</a>
         </div>
 
         <div class="select align-right">
