@@ -7,25 +7,26 @@ require __DIR__.'/data.php';
 require __DIR__.'/functions.php';
 require __DIR__.'/header.php';
 
-// if (isset($_GET['title'])) {
-//
-//   $title = $_GET['title'];
-//   $name = $_GET['name'];
-//   $content = $_GET['content'];
-//   $newPost[] = [
-//
-//     'title' => $title,
-//     'author' => $name,
-//     'avatar' => '',
-//     'content' => $content,
-//     'date' => time(),
-//     'likes' => 15,
-//
-//   ];
-//
-// array_push($posts, $newPost);
-//
-// }
+if (isset($_GET['title'])) {
+
+  $title = $_GET['title'];
+  $name = $_GET['name'];
+  $content = $_GET['content'];
+
+  $newPost = [
+
+    'title' => $title,
+    'author' => $name,
+    'avatar' => '',
+    'content' => $content,
+    'date' => 10,
+    'likes' => 15,
+
+  ];
+
+array_push($posts, $newPost);
+
+}
 
 $sortBy = 'date'; //Default is set sort posts by date
 

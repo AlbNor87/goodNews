@@ -2,7 +2,7 @@
 declare(strict_types=1);
 // This is the file where you can keep all your functions.
 
-//Function for sort post
+//Function for sorting post
 require __DIR__.'/data.php';
 
 function val_sort(array $array, string $key){
