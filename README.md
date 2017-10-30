@@ -23,6 +23,8 @@ Having seen it before proceeding is highly recommended. Thank you!
 - PHP
 - Javascript
 
+By Albert Norberg
+
 ![The matrix!](https://media.giphy.com/media/W9lzJDwciz6bS/giphy.gif)
 
 ### Tested by:
