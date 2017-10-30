@@ -1,6 +1,6 @@
 # goodNews - PHP Assignment
 
-## My Project
+## My Project - THE MATRIX NEWS FEED
 
 If you haven't seen The Matrix, don't worry everything is going to be okey. Go watch it immediately!
 Having seen it before proceeding is highly recommended. Thank you!
