@@ -11,7 +11,7 @@ $authors = [
     'fullName' => 'Keanu Reeves',
     'id' => 1,
     'link' => 'http://www.imdb.com/name/nm0000206/?ref_=tt_cl_t1',
-    'img' => '/img/cypher.png',
+    'img' => 'img/neo.png',
   ],
 
   'Morpheus' =>
@@ -20,7 +20,7 @@ $authors = [
     'fullName' => 'Laurence Fishburne',
     'id' => 2,
     'link' => 'http://www.imdb.com/name/nm0000401/?ref_=tt_trv_qu',
-    'img' => '/img/cypher.png',
+    'img' => 'img/morpheus.jpg',
   ],
 
   'Trinity' =>
@@ -29,7 +29,7 @@ $authors = [
     'fullName' => 'Carrie-Anne Moss',
     'id' => 3,
     'link' => 'http://www.imdb.com/name/nm0005251/?ref_=tt_cl_t3',
-    'img' => '/img/cypher.png',
+    'img' => 'img/cypher.png',
   ],
 
   'Agent Smith' =>
@@ -38,7 +38,7 @@ $authors = [
     'fullName' => 'Hugo Weaving',
     'id' => 4,
     'link' => 'http://www.imdb.com/name/nm0915989/?ref_=tt_cl_t4',
-    'img' => '/img/cypher.png',
+    'img' => 'img/cypher.png',
   ],
 
   'Cypher' =>
@@ -47,7 +47,7 @@ $authors = [
     'fullName' => 'Joe Pantoliano',
     'id' => 5,
     'link' => 'http://www.imdb.com/name/nm0001592/?ref_=tt_cl_t6',
-    'img' => '/img/cypher.png'
+    'img' => 'img/cypher.png'
   ],
 
 ];
