@@ -106,6 +106,16 @@ $posts = [
   ],
 
   [
+    'title' => 'Not to brag but...',
+    'author' => $authors['Neo']['name'],
+    'link' => $authors['Neo']['link'],
+    'avatar' => $authors['Neo']['img'],
+    'content' => "I know Kung Fu",
+    'date' => rand(1483228800, time()), //Generates random date between 2017-01-01 and the present
+    'likes' => rand(10,100),
+  ],
+
+  [
     'title' => 'What is the matrix?',
     'author' => $authors['Trinity']['name'],
     'link' => $authors['Trinity']['link'],

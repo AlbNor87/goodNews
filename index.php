@@ -47,25 +47,32 @@ $posts = val_sort($posts, $sortBy); //Sort it!!!
 
   <div class="main-container">
 
+    <nav>
+      <div class="menu">
+
+        <div class="links">
+          <a href="index.php">HOME</a>
+          <a href="http://www.imdb.com/title/tt0133093/" target="_blank">IMDB</a>
+          <a href="imdb">HOME</a>
+        </div>
+
+        <div class="select align-right">
+
+          <p>Sort posts by</p>
+          <select id="sort">
+            <option value="" disabled selected>Select your option</option>
+            <option value="date">Date</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="likes">Likes</option>
+          </select>
+
+        </div><!-- /select -->
+
+      </div>
+    </nav>
+
     <div class="news-feed">
-
-
-<div class="form align-right">
-
-  <p>Sort posts by</p>
-      <select id="sort">
-        <option value="" disabled selected>Select your option</option>
-        <option value="date">Date</option>
-        <option value="title">Title</option>
-        <option value="author">Author</option>
-        <option value="likes">Likes</option>
-      </select>
-
-
-</div>
-
-
-
 
       <?php foreach ($posts as $post): ?>
 
