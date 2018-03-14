@@ -13,20 +13,11 @@ declare(strict_types=1);
 //Function for sorting posts
 require __DIR__.'/data.php';
 
-function val_sort(array $array, string $key){
-
-  foreach ($array as $k => $v) {
-
-    $tempArray[] = $v[$key];
-  }
-
-  if ($key === 'date' || $key === 'likes'){ //If we choose to sort by date or likes
-    //we want it in the reversed order
-    arsort($tempArray);
-
-  } else {  //Everything else we want to sort in alpabetical or acending order
-
-    asort($tempArray);
+function val_sort(array $array, string $key)
+{
+    foreach ($array as $k => $v) {
+        $tempArray[] = $v[$key];
+    }
 
     if ($key === 'date' || $key === 'likes') { //If we choose to sort by date or likes
         //we want it in the reversed order
