@@ -8,32 +8,29 @@ require __DIR__.'/functions.php';
 require __DIR__.'/header.php';
 
 if (isset($_GET['title'])) {
+    $title = $_GET['title'];
+    $name = $_GET['name'];
+    $content = $_GET['content'];
 
-  $title = $_GET['title'];
-  $name = $_GET['name'];
-  $content = $_GET['content'];
-
-  $newPost = [
+    $newPost = [
 
     'title' => $title,
     'author' => $name,
     'avatar' => 'img/guest.png',
     'content' => $content,
     'date' => time(),
-    'likes' => rand(10,100),
+    'likes' => rand(10, 100),
 
   ];
 
-array_push($posts, $newPost);
-
+    array_push($posts, $newPost);
 }
 
 $sortBy = 'date'; //Default is set sort posts by date
 
 if (isset($_GET['sortBy'])) { //Get what value to sort by
 
-  $sortBy = $_GET['sortBy']; //Set it...
-
+    $sortBy = $_GET['sortBy']; //Set it...
 }
 
 $posts = val_sort($posts, $sortBy); //Sort it!!!
