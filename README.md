@@ -1,4 +1,4 @@
-[![StyleCI](https://styleci.io/repos/107100603/shield?branch=master?style=plastic)](https://styleci.io/repos/107100603)
+[![StyleCI](https://styleci.io/repos/107100603/shield?branch=master)](https://styleci.io/repos/107100603)
 
 # goodNews - PHP Assignment
 
